@@ -1,0 +1,45 @@
+{
+    "name": "convergine/craft-brevo",
+    "description": "Brevo (previously \"SendInBlue\") mailer adapter for Craft CMS.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craftcms",
+        "brevo",
+        "sendinblue",
+        "mailer",
+        "mailer adapter"
+    ],
+    "support": {
+        "issues": "https://github.com/convergine/craft-brevo/issues?state=open",
+        "source": "https://github.com/convergine/craft-brevo",
+        "docs": "https://github.com/convergine/craft-brevo/blob/master/README.md",
+        "support": {
+            "email": "info@convergine.com"
+        }
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Convergine Corp.",
+            "homepage": "https://www.convergine.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^4.0",
+        "symfony/sendinblue-mailer": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "convergine\\brevo\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Brevo",
+        "handle": "convergine-brevo",
+        "hasCpSettings": true,
+        "hasCpSection": true,
+        "changelogUrl": "https://github.com/convergine/craft-brevo/blob/master/CHANGELOG.md",
+        "class": "convergine\\brevo\\BrevoPlugin"
+    }
+}
