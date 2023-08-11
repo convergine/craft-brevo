@@ -2,7 +2,7 @@
     "name": "convergine/craft-brevo",
     "description": "Brevo (previously \"SendInBlue\") mailer adapter for Craft CMS.",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": [
         "craftcms",
         "brevo",
