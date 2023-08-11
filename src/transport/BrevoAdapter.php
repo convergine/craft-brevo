@@ -43,8 +43,9 @@ class BrevoAdapter extends BaseTransportAdapter {
             'adapter' => $this
         ]);
     }
-    
-    public function defineTransport(): array|SendinblueApiTransport{
-	    return new SendinblueApiTransport($this->api_key);
+
+    public function defineTransport(): array|SendinblueApiTransport {
+        $apiKey = App::parseEnv($this->api_key);
+        return new SendinblueApiTransport($apiKey);
     }
 }
